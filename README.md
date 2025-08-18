@@ -15,7 +15,15 @@ You will need to print the items in the HIP and KNEE folder 4 times (4 legs), an
 
 The simulation files are in the URDF or XACRO format, created using the [fusion2URDF fork by 16cra40](https://github.com/16cra40/fusion2urdf) which it itself is a fork of the original repo by SpaceMaster85. They can be run in rviz, or the simulation software of your choice. To use the URDF in Isaac Lab as we do, please reference the [Mistletoe-Sim](https://github.com/REAL-Robotics-Lab/Mistletoe-Sim.git) repository.
 
+### Joint and Link Naming Convention  
+Should be revised at another time because of how awful it is.
+![robot naming convention](docs/awful%20naming%20convention.png)
+
+
+### Robot Orientation
+![robot orientation](docs/mistletoe%20orientation.png)
+
+
 ## Other links
 
 - [Mistletoe-cpp Repository](https://github.com/REAL-Robotics-Lab/Mistletoe-cpp.git)
-- [Mistletoe-Sim Repository](https://github.com/REAL-Robotics-Lab/Mistletoe-Sim.git)
