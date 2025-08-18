@@ -1,3 +1,4 @@
 # Sim files 
 
-To build and install the ROS package (which should not be neccesary), run `colcon build` and then `source install/setup.bash` from the `mistletoe-v4_description` directory. 
+To build and install the ROS package (which should not be neccesary), run `colcon build` and then `source install/setup.bash` from the `mistletoe-v4_description` directory.  
+For whatever reason, creating USD file from the URDF using the new converter merges the shank and the foot. This is a known issue which has not been addressed for like almost half a year at the time of writing. See [this forum post](https://forums.developer.nvidia.com/t/isaac-sim-4-5-0-urdf-importer-links-with-defined-properties-mass-inertia-collision-reported-as-no-body-properties-and-merged/334912) and [another forum post](https://forums.developer.nvidia.com/t/isaacsim-4-5-urdf-import-not-working-as-expected/328272/4). My workaround was to use an older version of IsaacLab/Sim that I had locally, specifically version 4.0.0. It came with a urdf converter script which doesn't have this issue. 
