@@ -4,7 +4,7 @@
 
 ## Usage 
 
-In each version directory, there is a `Fusion files` `Print files` and `Simulation Files` directory, where `Fusion files` contains the f3d files for the project, `Print files` for the printbeds, and `Simulation Files` for XACRO/URDF/USD files that can be used to simulate the robot.
+In each version directory, there is a `fusion_files` `print_files` and `sim_files` directory, where `fusion_files` contains the f3d files for the project, `print_files` for the printbeds, and `sim_files` for XACRO/URDF/USD files that can be used to simulate the robot.
 
 ### ~~3D Printing~~ Printing these well is WIP
 
@@ -13,7 +13,7 @@ You will need to print the items in the HIP and KNEE folder 4 times (4 legs), an
 
 ### Simulation
 
-The simulation files are in the URDF or XACRO format, created using the [fusion2URDF fork by 16cra40](https://github.com/16cra40/fusion2urdf) which it itself is a fork of the original repo by SpaceMaster85. They can be run in rviz, or the simulation software of your choice. To use the URDF in Isaac Lab as we do, please reference the [Mistletoe-Sim](https://github.com/REAL-Robotics-Lab/Mistletoe-Sim.git) repository.
+The sim_files are in the URDF or XACRO format, created using the [fusion2URDF fork by 16cra40](https://github.com/16cra40/fusion2urdf) which it itself is a fork of the original repo by SpaceMaster85. They can be run in rviz, or the simulation software of your choice. To use the URDF in Isaac Lab as we do, please reference the [Mistletoe-Sim](https://github.com/REAL-Robotics-Lab/Mistletoe-Sim.git) repository.
 
 ### Joint and Link Naming Convention  
 Should be revised at another time because of how awful it is.
