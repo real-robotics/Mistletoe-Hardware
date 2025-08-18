@@ -1,133 +1,133 @@
 <?xml version="1.0" ?>
 <robot name="mistletoe-v4" xmlns:xacro="http://www.ros.org/wiki/xacro" >
 
-<transmission name="LEG_1_HFE_tran">
+<transmission name="HFE_1_tran">
   <type>transmission_interface/SimpleTransmission</type>
-  <joint name="LEG_1_HFE">
+  <joint name="HFE_1">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
   </joint>
-  <actuator name="LEG_1_HFE_actr">
+  <actuator name="HFE_1_actr">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
     <mechanicalReduction>1</mechanicalReduction>
   </actuator>
 </transmission>
 
-<transmission name="LEG_2_HFE_tran">
+<transmission name="HFE_2_tran">
   <type>transmission_interface/SimpleTransmission</type>
-  <joint name="LEG_2_HFE">
+  <joint name="HFE_2">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
   </joint>
-  <actuator name="LEG_2_HFE_actr">
+  <actuator name="HFE_2_actr">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
     <mechanicalReduction>1</mechanicalReduction>
   </actuator>
 </transmission>
 
-<transmission name="LEG_3_HFE_tran">
+<transmission name="HFE_3_tran">
   <type>transmission_interface/SimpleTransmission</type>
-  <joint name="LEG_3_HFE">
+  <joint name="HFE_3">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
   </joint>
-  <actuator name="LEG_3_HFE_actr">
+  <actuator name="HFE_3_actr">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
     <mechanicalReduction>1</mechanicalReduction>
   </actuator>
 </transmission>
 
-<transmission name="LEG_4_HFE_tran">
+<transmission name="HFE_4_tran">
   <type>transmission_interface/SimpleTransmission</type>
-  <joint name="LEG_4_HFE">
+  <joint name="HFE_4">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
   </joint>
-  <actuator name="LEG_4_HFE_actr">
+  <actuator name="HFE_4_actr">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
     <mechanicalReduction>1</mechanicalReduction>
   </actuator>
 </transmission>
 
-<transmission name="LEG_1_KFE_tran">
+<transmission name="KFE_1_tran">
   <type>transmission_interface/SimpleTransmission</type>
-  <joint name="LEG_1_KFE">
+  <joint name="KFE_1">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
   </joint>
-  <actuator name="LEG_1_KFE_actr">
+  <actuator name="KFE_1_actr">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
     <mechanicalReduction>1</mechanicalReduction>
   </actuator>
 </transmission>
 
-<transmission name="LEG_2_KFE_tran">
+<transmission name="KFE_2_tran">
   <type>transmission_interface/SimpleTransmission</type>
-  <joint name="LEG_2_KFE">
+  <joint name="KFE_2">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
   </joint>
-  <actuator name="LEG_2_KFE_actr">
+  <actuator name="KFE_2_actr">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
     <mechanicalReduction>1</mechanicalReduction>
   </actuator>
 </transmission>
 
-<transmission name="LEG_3_KFE_tran">
+<transmission name="KFE_3_tran">
   <type>transmission_interface/SimpleTransmission</type>
-  <joint name="LEG_3_KFE">
+  <joint name="KFE_3">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
   </joint>
-  <actuator name="LEG_3_KFE_actr">
+  <actuator name="KFE_3_actr">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
     <mechanicalReduction>1</mechanicalReduction>
   </actuator>
 </transmission>
 
-<transmission name="LEG_4_KFE_tran">
+<transmission name="KFE_4_tran">
   <type>transmission_interface/SimpleTransmission</type>
-  <joint name="LEG_4_KFE">
+  <joint name="KFE_4">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
   </joint>
-  <actuator name="LEG_4_KFE_actr">
+  <actuator name="KFE_4_actr">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
     <mechanicalReduction>1</mechanicalReduction>
   </actuator>
 </transmission>
 
-<transmission name="LEG_1_HAA_tran">
+<transmission name="HAA_1_tran">
   <type>transmission_interface/SimpleTransmission</type>
-  <joint name="LEG_1_HAA">
+  <joint name="HAA_1">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
   </joint>
-  <actuator name="LEG_1_HAA_actr">
+  <actuator name="HAA_1_actr">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
     <mechanicalReduction>1</mechanicalReduction>
   </actuator>
 </transmission>
 
-<transmission name="LEG_2_HAA_tran">
+<transmission name="HAA_2_tran">
   <type>transmission_interface/SimpleTransmission</type>
-  <joint name="LEG_2_HAA">
+  <joint name="HAA_2">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
   </joint>
-  <actuator name="LEG_2_HAA_actr">
+  <actuator name="HAA_2_actr">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
     <mechanicalReduction>1</mechanicalReduction>
   </actuator>
 </transmission>
 
-<transmission name="LEG_3_HAA_tran">
+<transmission name="HAA_3_tran">
   <type>transmission_interface/SimpleTransmission</type>
-  <joint name="LEG_3_HAA">
+  <joint name="HAA_3">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
   </joint>
-  <actuator name="LEG_3_HAA_actr">
+  <actuator name="HAA_3_actr">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
     <mechanicalReduction>1</mechanicalReduction>
   </actuator>
 </transmission>
 
-<transmission name="LEG_4_HAA_tran">
+<transmission name="HAA_4_tran">
   <type>transmission_interface/SimpleTransmission</type>
-  <joint name="LEG_4_HAA">
+  <joint name="HAA_4">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
   </joint>
-  <actuator name="LEG_4_HAA_actr">
+  <actuator name="HAA_4_actr">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
     <mechanicalReduction>1</mechanicalReduction>
   </actuator>

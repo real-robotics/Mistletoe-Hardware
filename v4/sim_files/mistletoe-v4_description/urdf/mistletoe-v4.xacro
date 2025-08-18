@@ -5,9 +5,9 @@
 <xacro:include filename="$(find mistletoe-v4_description)/urdf/mistletoe-v4.trans" />
 <link name="base_link">
   <inertial>
-    <origin xyz="0.05700078839563821 0.1329991065435795 -3.2889851230878133e-06" rpy="0 0 0"/>
+    <origin xyz="8.934564205453908e-07 7.883956382581658e-07 -0.04550328898512308" rpy="0 0 0"/>
     <mass value="5.5104049208044765"/>
-    <inertia ixx="0.044213" iyy="0.020175" izz="0.057638" ixy="0.0" iyz="0.0" ixz="-0.0"/>
+    <inertia ixx="0.020175" iyy="0.044213" izz="0.057638" ixy="-0.0" iyz="-0.0" ixz="-0.0"/>
   </inertial>
   <visual>
     <origin xyz="0 0 0" rpy="0 0 0"/>
@@ -24,340 +24,448 @@
   </collision>
 </link>
 
-<link name="leg_1">
+<link name="THIGH_1">
   <inertial>
-    <origin xyz="0.05103625040586149 -0.001093563694212693 -0.0478466029212596" rpy="0 0 0"/>
+    <origin xyz="0.0010935636942111804 0.051036250405863404 -0.04784660292125947" rpy="0 0 0"/>
     <mass value="0.7240002196192582"/>
-    <inertia ixx="0.003876" iyy="0.004023" izz="0.000791" ixy="-1.7e-05" iyz="4e-05" ixz="0.000584"/>
+    <inertia ixx="0.004023" iyy="0.003876" izz="0.000791" ixy="1.7e-05" iyz="0.000584" ixz="-4e-05"/>
   </inertial>
   <visual>
-    <origin xyz="-0.14475 0.06675 -0.0" rpy="0 0 0"/>
+    <origin xyz="-0.19975 -0.08775 0.0455" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://mistletoe-v4_description/meshes/leg_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://mistletoe-v4_description/meshes/THIGH_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="steel_satin"/>
   </visual>
   <collision>
-    <origin xyz="-0.14475 0.06675 -0.0" rpy="0 0 0"/>
+    <origin xyz="-0.19975 -0.08775 0.0455" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://mistletoe-v4_description/meshes/leg_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://mistletoe-v4_description/meshes/THIGH_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
 
-<link name="leg_2">
+<link name="THIGH_2">
   <inertial>
-    <origin xyz="-0.05103625040585766 0.0010935636942093763 -0.047846602921261125" rpy="0 0 0"/>
+    <origin xyz="-0.001093563694208266 -0.05103625040585741 -0.04784660292126859" rpy="0 0 0"/>
     <mass value="0.7240002196192582"/>
-    <inertia ixx="0.003876" iyy="0.004023" izz="0.000791" ixy="-1.7e-05" iyz="-4e-05" ixz="-0.000584"/>
+    <inertia ixx="0.004023" iyy="0.003876" izz="0.000791" ixy="1.7e-05" iyz="-0.000584" ixz="4e-05"/>
   </inertial>
   <visual>
-    <origin xyz="0.03075 0.06675 -0.0" rpy="0 0 0"/>
+    <origin xyz="-0.19975 0.08775 0.0455" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://mistletoe-v4_description/meshes/leg_2.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://mistletoe-v4_description/meshes/THIGH_2.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="steel_satin"/>
   </visual>
   <collision>
-    <origin xyz="0.03075 0.06675 -0.0" rpy="0 0 0"/>
+    <origin xyz="-0.19975 0.08775 0.0455" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://mistletoe-v4_description/meshes/leg_2.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://mistletoe-v4_description/meshes/THIGH_2.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
 
-<link name="leg_3">
+<link name="THIGH_3">
   <inertial>
-    <origin xyz="0.05103625040585327 -0.0010935636941842297 -0.04784660292125952" rpy="0 0 0"/>
+    <origin xyz="0.0010935636941983018 0.05103625040585985 -0.04784660292125947" rpy="0 0 0"/>
     <mass value="0.7240002196192582"/>
-    <inertia ixx="0.003876" iyy="0.004023" izz="0.000791" ixy="-1.7e-05" iyz="4e-05" ixz="0.000584"/>
+    <inertia ixx="0.004023" iyy="0.003876" izz="0.000791" ixy="1.7e-05" iyz="0.000584" ixz="-4e-05"/>
   </inertial>
   <visual>
-    <origin xyz="-0.14475 -0.33275 -0.0" rpy="0 0 0"/>
+    <origin xyz="0.19975 -0.08775 0.0455" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://mistletoe-v4_description/meshes/leg_3.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://mistletoe-v4_description/meshes/THIGH_3.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="steel_satin"/>
   </visual>
   <collision>
-    <origin xyz="-0.14475 -0.33275 -0.0" rpy="0 0 0"/>
+    <origin xyz="0.19975 -0.08775 0.0455" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://mistletoe-v4_description/meshes/leg_3.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://mistletoe-v4_description/meshes/THIGH_3.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
 
-<link name="leg_4">
+<link name="THIGH_4">
   <inertial>
-    <origin xyz="-0.05103625040587105 0.0010935636941885596 -0.04784660292125831" rpy="0 0 0"/>
+    <origin xyz="-0.0010935636942024096 -0.05103625040586318 -0.047846602921261486" rpy="0 0 0"/>
     <mass value="0.7240002196192582"/>
-    <inertia ixx="0.003876" iyy="0.004023" izz="0.000791" ixy="-1.7e-05" iyz="-4e-05" ixz="-0.000584"/>
+    <inertia ixx="0.004023" iyy="0.003876" izz="0.000791" ixy="1.7e-05" iyz="-0.000584" ixz="4e-05"/>
   </inertial>
   <visual>
-    <origin xyz="0.03075 -0.33275 -0.0" rpy="0 0 0"/>
+    <origin xyz="0.19975 0.08775 0.0455" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://mistletoe-v4_description/meshes/leg_4.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://mistletoe-v4_description/meshes/THIGH_4.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="steel_satin"/>
   </visual>
   <collision>
-    <origin xyz="0.03075 -0.33275 -0.0" rpy="0 0 0"/>
+    <origin xyz="0.19975 0.08775 0.0455" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://mistletoe-v4_description/meshes/leg_4.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://mistletoe-v4_description/meshes/THIGH_4.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
 
-<link name="ankle_1">
+<link name="SHANK_1">
   <inertial>
-    <origin xyz="-0.04946394692107786 -7.436600779620051e-09 -0.07474839788205012" rpy="0 0 0"/>
-    <mass value="0.09600546785891005"/>
-    <inertia ixx="0.000472" iyy="0.000492" izz="3.9e-05" ixy="-0.0" iyz="-0.0" ixz="-6.1e-05"/>
+    <origin xyz="8.778158588906848e-09 -0.04792404704971809 -0.05711326657615318" rpy="0 0 0"/>
+    <mass value="0.08133302860327428"/>
+    <inertia ixx="0.000324" iyy="0.000305" izz="3.6e-05" ixy="0.0" iyz="-4.7e-05" ixz="0.0"/>
   </inertial>
   <visual>
-    <origin xyz="-0.23591 0.06675 0.1799" rpy="0 0 0"/>
+    <origin xyz="-0.19975 -0.17891 0.2254" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://mistletoe-v4_description/meshes/ankle_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://mistletoe-v4_description/meshes/SHANK_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="steel_satin"/>
   </visual>
   <collision>
-    <origin xyz="-0.23591 0.06675 0.1799" rpy="0 0 0"/>
+    <origin xyz="-0.19975 -0.17891 0.2254" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://mistletoe-v4_description/meshes/ankle_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://mistletoe-v4_description/meshes/SHANK_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
 
-<link name="ankle_2">
+<link name="SHANK_2">
   <inertial>
-    <origin xyz="0.04946394692108842 7.436594409715447e-09 -0.07474839788204435" rpy="0 0 0"/>
-    <mass value="0.09600546785891005"/>
-    <inertia ixx="0.000472" iyy="0.000492" izz="3.9e-05" ixy="-0.0" iyz="0.0" ixz="6.1e-05"/>
+    <origin xyz="-8.778152343902335e-09 0.04792404704972353 -0.05711326657615601" rpy="0 0 0"/>
+    <mass value="0.08133302860327428"/>
+    <inertia ixx="0.000324" iyy="0.000305" izz="3.6e-05" ixy="0.0" iyz="4.7e-05" ixz="-0.0"/>
   </inertial>
   <visual>
-    <origin xyz="0.12191 0.06675 0.1799" rpy="0 0 0"/>
+    <origin xyz="-0.19975 0.17891 0.2254" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://mistletoe-v4_description/meshes/ankle_2.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://mistletoe-v4_description/meshes/SHANK_2.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="steel_satin"/>
   </visual>
   <collision>
-    <origin xyz="0.12191 0.06675 0.1799" rpy="0 0 0"/>
+    <origin xyz="-0.19975 0.17891 0.2254" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://mistletoe-v4_description/meshes/ankle_2.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://mistletoe-v4_description/meshes/SHANK_2.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
 
-<link name="ankle_3">
+<link name="SHANK_3">
   <inertial>
-    <origin xyz="-0.049463946921087826 -7.436600890642353e-09 -0.07474839788202936" rpy="0 0 0"/>
-    <mass value="0.09600546785891005"/>
-    <inertia ixx="0.000472" iyy="0.000492" izz="3.9e-05" ixy="-0.0" iyz="-0.0" ixz="-6.1e-05"/>
+    <origin xyz="8.778171217693753e-09 -0.04792404704972264 -0.057113266576134136" rpy="0 0 0"/>
+    <mass value="0.08133302860327428"/>
+    <inertia ixx="0.000324" iyy="0.000305" izz="3.6e-05" ixy="0.0" iyz="-4.7e-05" ixz="0.0"/>
   </inertial>
   <visual>
-    <origin xyz="-0.23591 -0.33275 0.1799" rpy="0 0 0"/>
+    <origin xyz="0.19975 -0.17891 0.2254" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://mistletoe-v4_description/meshes/ankle_3.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://mistletoe-v4_description/meshes/SHANK_3.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="steel_satin"/>
   </visual>
   <collision>
-    <origin xyz="-0.23591 -0.33275 0.1799" rpy="0 0 0"/>
+    <origin xyz="0.19975 -0.17891 0.2254" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://mistletoe-v4_description/meshes/ankle_3.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://mistletoe-v4_description/meshes/SHANK_3.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
 
-<link name="ankle_4">
+<link name="SHANK_4">
   <inertial>
-    <origin xyz="0.04946394692107019 7.436615101497068e-09 -0.07474839788202953" rpy="0 0 0"/>
-    <mass value="0.09600546785891005"/>
-    <inertia ixx="0.000472" iyy="0.000492" izz="3.9e-05" ixy="-0.0" iyz="0.0" ixz="6.1e-05"/>
+    <origin xyz="-8.778185067725985e-09 0.04792404704972175 -0.05711326657613752" rpy="0 0 0"/>
+    <mass value="0.08133302860327428"/>
+    <inertia ixx="0.000324" iyy="0.000305" izz="3.6e-05" ixy="0.0" iyz="4.7e-05" ixz="-0.0"/>
   </inertial>
   <visual>
-    <origin xyz="0.12191 -0.33275 0.1799" rpy="0 0 0"/>
+    <origin xyz="0.19975 0.17891 0.2254" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://mistletoe-v4_description/meshes/ankle_4.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://mistletoe-v4_description/meshes/SHANK_4.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="steel_satin"/>
   </visual>
   <collision>
-    <origin xyz="0.12191 -0.33275 0.1799" rpy="0 0 0"/>
+    <origin xyz="0.19975 0.17891 0.2254" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://mistletoe-v4_description/meshes/ankle_4.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://mistletoe-v4_description/meshes/SHANK_4.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
 
-<link name="hip_1">
+<link name="HIP_1">
   <inertial>
-    <origin xyz="0.00033200789532825126 -0.043486743444365664 -3.0695740535901812e-06" rpy="0 0 0"/>
+    <origin xyz="0.04348674344436504 0.0003320078953301872 -3.069574053486679e-06" rpy="0 0 0"/>
     <mass value="0.5061938145713982"/>
-    <inertia ixx="0.000507" iyy="0.000367" izz="0.00044" ixy="0.0" iyz="2e-06" ixz="-1e-06"/>
+    <inertia ixx="0.000367" iyy="0.000507" izz="0.00044" ixy="-0.0" iyz="-1e-06" ixz="-2e-06"/>
   </inertial>
   <visual>
-    <origin xyz="-0.114 0.02 -0.0" rpy="0 0 0"/>
+    <origin xyz="-0.153 -0.057 0.0455" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://mistletoe-v4_description/meshes/hip_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://mistletoe-v4_description/meshes/HIP_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="steel_satin"/>
   </visual>
   <collision>
-    <origin xyz="-0.114 0.02 -0.0" rpy="0 0 0"/>
+    <origin xyz="-0.153 -0.057 0.0455" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://mistletoe-v4_description/meshes/hip_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://mistletoe-v4_description/meshes/HIP_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
 
-<link name="hip_2">
+<link name="HIP_2">
   <inertial>
-    <origin xyz="-0.00033200789532815975 -0.043486743444365636 3.0695740642318733e-06" rpy="0 0 0"/>
+    <origin xyz="0.04348674344436615 -0.0003320078953261904 3.069574053611579e-06" rpy="0 0 0"/>
     <mass value="0.5061938145713982"/>
-    <inertia ixx="0.000507" iyy="0.000367" izz="0.00044" ixy="-0.0" iyz="-2e-06" ixz="-1e-06"/>
+    <inertia ixx="0.000367" iyy="0.000507" izz="0.00044" ixy="0.0" iyz="-1e-06" ixz="2e-06"/>
   </inertial>
   <visual>
-    <origin xyz="-0.0 0.02 -0.0" rpy="0 0 0"/>
+    <origin xyz="-0.153 0.057 0.0455" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://mistletoe-v4_description/meshes/hip_2.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://mistletoe-v4_description/meshes/HIP_2.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="steel_satin"/>
   </visual>
   <collision>
-    <origin xyz="-0.0 0.02 -0.0" rpy="0 0 0"/>
+    <origin xyz="-0.153 0.057 0.0455" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://mistletoe-v4_description/meshes/hip_2.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://mistletoe-v4_description/meshes/HIP_2.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
 
-<link name="hip_3">
+<link name="HIP_3">
   <inertial>
-    <origin xyz="0.0003320078953200356 0.04348674344436587 3.0695740535902494e-06" rpy="0 0 0"/>
+    <origin xyz="-0.04348674344436626 0.00033200789532639163 3.0695740536393346e-06" rpy="0 0 0"/>
     <mass value="0.5061938145713982"/>
-    <inertia ixx="0.000507" iyy="0.000367" izz="0.00044" ixy="-0.0" iyz="2e-06" ixz="1e-06"/>
+    <inertia ixx="0.000367" iyy="0.000507" izz="0.00044" ixy="0.0" iyz="1e-06" ixz="-2e-06"/>
   </inertial>
   <visual>
-    <origin xyz="-0.114 -0.286 -0.0" rpy="0 0 0"/>
+    <origin xyz="0.153 -0.057 0.0455" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://mistletoe-v4_description/meshes/hip_3.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://mistletoe-v4_description/meshes/HIP_3.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="steel_satin"/>
   </visual>
   <collision>
-    <origin xyz="-0.114 -0.286 -0.0" rpy="0 0 0"/>
+    <origin xyz="0.153 -0.057 0.0455" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://mistletoe-v4_description/meshes/hip_3.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://mistletoe-v4_description/meshes/HIP_3.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
 
-<link name="hip_4">
+<link name="HIP_4">
   <inertial>
-    <origin xyz="-0.0003320078953364699 0.04348674344436604 -3.0695740517278616e-06" rpy="0 0 0"/>
+    <origin xyz="-0.04348674344436532 -0.00033200789533001374 -3.0695740535699456e-06" rpy="0 0 0"/>
     <mass value="0.5061938145713982"/>
-    <inertia ixx="0.000507" iyy="0.000367" izz="0.00044" ixy="0.0" iyz="-2e-06" ixz="1e-06"/>
+    <inertia ixx="0.000367" iyy="0.000507" izz="0.00044" ixy="-0.0" iyz="1e-06" ixz="2e-06"/>
   </inertial>
   <visual>
-    <origin xyz="-0.0 -0.286 -0.0" rpy="0 0 0"/>
+    <origin xyz="0.153 0.057 0.0455" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://mistletoe-v4_description/meshes/hip_4.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://mistletoe-v4_description/meshes/HIP_4.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="steel_satin"/>
   </visual>
   <collision>
-    <origin xyz="-0.0 -0.286 -0.0" rpy="0 0 0"/>
+    <origin xyz="0.153 0.057 0.0455" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://mistletoe-v4_description/meshes/hip_4.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://mistletoe-v4_description/meshes/HIP_4.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
 
-<joint name="LEG_1_HFE" type="continuous">
-  <origin xyz="0.03075 -0.04675 0.0" rpy="0 0 0"/>
-  <parent link="hip_1"/>
-  <child link="leg_1"/>
-  <axis xyz="1.0 -0.0 0.0"/>
+<link name="FOOT_1">
+  <inertial>
+    <origin xyz="-1.0547118733938987e-15 3.982925100842749e-15 -3.7518991807816704e-07" rpy="0 0 0"/>
+    <mass value="0.11097676048805943"/>
+    <inertia ixx="1e-05" iyy="1e-05" izz="1e-05" ixy="0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.19975 -0.12091 0.397904" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://mistletoe-v4_description/meshes/FOOT_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="steel_satin"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.19975 -0.12091 0.397904" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://mistletoe-v4_description/meshes/FOOT_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="FOOT_2">
+  <inertial>
+    <origin xyz="7.244205235679146e-15 -2.886579864025407e-15 -3.7518991713447747e-07" rpy="0 0 0"/>
+    <mass value="0.11097676048805943"/>
+    <inertia ixx="1e-05" iyy="1e-05" izz="1e-05" ixy="0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.19975 0.12091 0.397904" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://mistletoe-v4_description/meshes/FOOT_2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="steel_satin"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.19975 0.12091 0.397904" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://mistletoe-v4_description/meshes/FOOT_2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="FOOT_3">
+  <inertial>
+    <origin xyz="1.9290125052862095e-14 -2.248201624865942e-15 -3.7518988832419e-07" rpy="0 0 0"/>
+    <mass value="0.11097676048805943"/>
+    <inertia ixx="1e-05" iyy="1e-05" izz="1e-05" ixy="-0.0" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.19975 -0.12091 0.397904" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://mistletoe-v4_description/meshes/FOOT_3.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="steel_satin"/>
+  </visual>
+  <collision>
+    <origin xyz="0.19975 -0.12091 0.397904" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://mistletoe-v4_description/meshes/FOOT_3.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="FOOT_4">
+  <inertial>
+    <origin xyz="-3.497202527569243e-14 2.55351295663786e-15 -3.7518989165485905e-07" rpy="0 0 0"/>
+    <mass value="0.11097676048805943"/>
+    <inertia ixx="1e-05" iyy="1e-05" izz="1e-05" ixy="0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.19975 0.12091 0.397904" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://mistletoe-v4_description/meshes/FOOT_4.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="steel_satin"/>
+  </visual>
+  <collision>
+    <origin xyz="0.19975 0.12091 0.397904" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://mistletoe-v4_description/meshes/FOOT_4.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<joint name="HFE_1" type="continuous">
+  <origin xyz="0.04675 0.03075 0.0" rpy="0 0 0"/>
+  <parent link="HIP_1"/>
+  <child link="THIGH_1"/>
+  <axis xyz="-0.0 1.0 -0.0"/>
 </joint>
 
-<joint name="LEG_2_HFE" type="continuous">
-  <origin xyz="-0.03075 -0.04675 0.0" rpy="0 0 0"/>
-  <parent link="hip_2"/>
-  <child link="leg_2"/>
-  <axis xyz="-1.0 0.0 -0.0"/>
+<joint name="HFE_2" type="continuous">
+  <origin xyz="0.04675 -0.03075 0.0" rpy="0 0 0"/>
+  <parent link="HIP_2"/>
+  <child link="THIGH_2"/>
+  <axis xyz="0.0 -1.0 0.0"/>
 </joint>
 
-<joint name="LEG_3_HFE" type="continuous">
-  <origin xyz="0.03075 0.04675 0.0" rpy="0 0 0"/>
-  <parent link="hip_3"/>
-  <child link="leg_3"/>
-  <axis xyz="1.0 0.0 0.0"/>
+<joint name="HFE_3" type="continuous">
+  <origin xyz="-0.04675 0.03075 0.0" rpy="0 0 0"/>
+  <parent link="HIP_3"/>
+  <child link="THIGH_3"/>
+  <axis xyz="-0.0 1.0 0.0"/>
 </joint>
 
-<joint name="LEG_4_HFE" type="continuous">
-  <origin xyz="-0.03075 0.04675 0.0" rpy="0 0 0"/>
-  <parent link="hip_4"/>
-  <child link="leg_4"/>
-  <axis xyz="-1.0 -0.0 0.0"/>
+<joint name="HFE_4" type="continuous">
+  <origin xyz="-0.04675 -0.03075 0.0" rpy="0 0 0"/>
+  <parent link="HIP_4"/>
+  <child link="THIGH_4"/>
+  <axis xyz="0.0 -1.0 0.0"/>
 </joint>
 
-<joint name="LEG_1_KFE" type="continuous">
-  <origin xyz="0.09116 0.0 -0.1799" rpy="0 0 0"/>
-  <parent link="leg_1"/>
-  <child link="ankle_1"/>
-  <axis xyz="-1.0 -0.0 -0.0"/>
+<joint name="KFE_1" type="continuous">
+  <origin xyz="0.0 0.09116 -0.1799" rpy="0 0 0"/>
+  <parent link="THIGH_1"/>
+  <child link="SHANK_1"/>
+  <axis xyz="0.0 -1.0 -0.0"/>
 </joint>
 
-<joint name="LEG_2_KFE" type="continuous">
-  <origin xyz="-0.09116 0.0 -0.1799" rpy="0 0 0"/>
-  <parent link="leg_2"/>
-  <child link="ankle_2"/>
-  <axis xyz="1.0 0.0 0.0"/>
+<joint name="KFE_2" type="continuous">
+  <origin xyz="0.0 -0.09116 -0.1799" rpy="0 0 0"/>
+  <parent link="THIGH_2"/>
+  <child link="SHANK_2"/>
+  <axis xyz="-0.0 1.0 0.0"/>
 </joint>
 
-<joint name="LEG_3_KFE" type="continuous">
-  <origin xyz="0.09116 0.0 -0.1799" rpy="0 0 0"/>
-  <parent link="leg_3"/>
-  <child link="ankle_3"/>
-  <axis xyz="-1.0 -0.0 -0.0"/>
+<joint name="KFE_3" type="continuous">
+  <origin xyz="0.0 0.09116 -0.1799" rpy="0 0 0"/>
+  <parent link="THIGH_3"/>
+  <child link="SHANK_3"/>
+  <axis xyz="0.0 -1.0 -0.0"/>
 </joint>
 
-<joint name="LEG_4_KFE" type="continuous">
-  <origin xyz="-0.09116 0.0 -0.1799" rpy="0 0 0"/>
-  <parent link="leg_4"/>
-  <child link="ankle_4"/>
+<joint name="KFE_4" type="continuous">
+  <origin xyz="0.0 -0.09116 -0.1799" rpy="0 0 0"/>
+  <parent link="THIGH_4"/>
+  <child link="SHANK_4"/>
+  <axis xyz="-0.0 1.0 0.0"/>
+</joint>
+
+<joint name="HAA_1" type="continuous">
+  <origin xyz="0.153 0.057 -0.0455" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="HIP_1"/>
   <axis xyz="1.0 0.0 -0.0"/>
 </joint>
 
-<joint name="LEG_1_HAA" type="continuous">
-  <origin xyz="0.114 -0.02 0.0" rpy="0 0 0"/>
+<joint name="HAA_2" type="continuous">
+  <origin xyz="0.153 -0.057 -0.0455" rpy="0 0 0"/>
   <parent link="base_link"/>
-  <child link="hip_1"/>
-  <axis xyz="0.0 -1.0 0.0"/>
+  <child link="HIP_2"/>
+  <axis xyz="1.0 0.0 -0.0"/>
 </joint>
 
-<joint name="LEG_2_HAA" type="continuous">
-  <origin xyz="0.0 -0.02 0.0" rpy="0 0 0"/>
+<joint name="HAA_3" type="continuous">
+  <origin xyz="-0.153 0.057 -0.0455" rpy="0 0 0"/>
   <parent link="base_link"/>
-  <child link="hip_2"/>
-  <axis xyz="0.0 -1.0 0.0"/>
+  <child link="HIP_3"/>
+  <axis xyz="-1.0 -0.0 0.0"/>
 </joint>
 
-<joint name="LEG_3_HAA" type="continuous">
-  <origin xyz="0.114 0.286 0.0" rpy="0 0 0"/>
+<joint name="HAA_4" type="continuous">
+  <origin xyz="-0.153 -0.057 -0.0455" rpy="0 0 0"/>
   <parent link="base_link"/>
-  <child link="hip_3"/>
-  <axis xyz="0.0 1.0 0.0"/>
+  <child link="HIP_4"/>
+  <axis xyz="-1.0 -0.0 0.0"/>
 </joint>
 
-<joint name="LEG_4_HAA" type="continuous">
-  <origin xyz="0.0 0.286 0.0" rpy="0 0 0"/>
-  <parent link="base_link"/>
-  <child link="hip_4"/>
-  <axis xyz="0.0 1.0 0.0"/>
+<joint name="Rigid 34" type="fixed">
+  <origin xyz="0.0 -0.058 -0.172504" rpy="0 0 0"/>
+  <parent link="SHANK_1"/>
+  <child link="FOOT_1"/>
+</joint>
+
+<joint name="Rigid 35" type="fixed">
+  <origin xyz="0.0 0.058 -0.172504" rpy="0 0 0"/>
+  <parent link="SHANK_2"/>
+  <child link="FOOT_2"/>
+</joint>
+
+<joint name="Rigid 36" type="fixed">
+  <origin xyz="0.0 -0.058 -0.172504" rpy="0 0 0"/>
+  <parent link="SHANK_3"/>
+  <child link="FOOT_3"/>
+</joint>
+
+<joint name="Rigid 37" type="fixed">
+  <origin xyz="0.0 0.058 -0.172504" rpy="0 0 0"/>
+  <parent link="SHANK_4"/>
+  <child link="FOOT_4"/>
 </joint>
 
 </robot>
